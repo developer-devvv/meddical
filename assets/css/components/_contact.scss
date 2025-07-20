@@ -1,0 +1,108 @@
+.contact {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        @include max-991 {
+            gap: 50px;
+        }
+
+        @include max-767 {
+            gap: 40px;
+        }
+
+        @include max-575 {
+            gap: 30px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+        }
+    }
+
+    &__box {
+        width: calc(25% - 15px);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 52px 26px;
+        background-color: $accent-color;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+
+        @include max-1199 {
+            padding: 45px 10px;
+        }
+
+        @include max-991 {
+            width: calc(50% - 10px);
+            padding: 50px 24px;
+        }
+
+        @include max-575 {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        &-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &-icon {
+            font-size: 40px;
+            color: $primary-color;
+
+            @include max-575 {
+                font-size: 35px;
+            }
+
+            @include max-425 {
+                font-size: 30px;
+            }
+        }
+
+        &-title {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $primary-color;
+            margin-bottom: 8px;
+
+            @include max-575 {
+                text-align: center;
+            }
+        }
+
+        &-link {
+            display: block;
+            color: $primary-color;
+
+            @include max-575 {
+                text-align: center;
+            }
+        }
+
+        &:hover {
+            background-color: $primary-color;
+
+            .contact__box-icon {
+                color: $accent-color;
+            }
+
+            .contact__box-title {
+                color: $accent-color;
+            }
+
+            .contact__box-link {
+                color: $accent-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web development and design, dedicated to people who build websites.">
+    <meta name="keywords" content="web design, web development">
+    <meta name="author" content="Dev Bhayani">
+
+    <!-- favicon Link  -->
+    <!-- <link rel="icon" href="assets/images/tailwind-logo.png" type="image/x-icon"> -->
+
+    <!-- SEO / Crawlers -->
+    <meta name='robots' content='index,follow'>
+
+    <title>MEDDICAL - Hospital Website Using HTML, CSS</title>
+
+    <link rel="stylesheet" href="assets/css/library/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/fonts/font_awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontello/css/fontello.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ########### Header Section Start ###########-->
+    <header class="header">
+        <div class="container p-0">
+            <div class="header__inner">
+                <!-- header Top Bar  -->
+                <div class="header__top-bar">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="assets/image/logo.svg" alt="Logo" width="193" height="42"></a>
+                    </div>
+
+                    <div class="header__info">
+                        <div class="header__info-box order-1">
+                           <img src="assets/image/call-icon.svg" alt="call-icon" width="40" height="40">
+                            <div class="header__info-box-content">
+                                <p class="description-secondary header__info-box-title">Emergency</p>
+                                <a class="description-secondary header__info-box-link" href="tel:237681812255">(237) 681-812-255</a>
+                            </div>
+                        </div>
+
+                        <div class="header__info-box order-3">
+                            <img src="assets/image/watch-icon.svg" alt="call-icon" width="40" height="40">
+                            <div class="header__info-box-content">
+                                <p class="description-secondary header__info-box-title">Work Hour</p>
+                                <p class="description-secondary header__info-box-link">09:00 - 20:00 Everyday</p>
+                            </div>
+                        </div>
+
+                        <div class="header__info-box order-2">
+                            <img src="assets/image/location-icon.svg" alt="call-icon" width="40" height="40">
+                            <div class="header__info-box-content">
+                                <p class="description-secondary header__info-box-title">Location</p>
+                                <a class="description-secondary header__info-box-link"href="#">0123 Some Place</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottom-bar">
+            <div class="container">
+                <div class="header__navigation">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="assets/image/mobile-logo.png" alt="Logo" width="100%" height="100%"></a>
+                    </div>
+
+                    <nav class="header__nav-link">
+                        <ul class="header__nav-link-list">
+                            <li><a class="description-primary header__nav-link-list-item active" href="index.html">Home</a></li>
+                            <li><a class="description-primary header__nav-link-list-item" href="about.html">About Us</a></li>
+                            <li><a class="description-primary header__nav-link-list-item" href="#">Services</a></li>
+                            <li><a class="description-primary header__nav-link-list-item" href="#">Doctors</a></li>
+                            <li><a class="description-primary header__nav-link-list-item" href="#">News</a></li>
+                            <li><a class="description-primary header__nav-link-list-item" href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__btn-container">
+                        <a class="header__search-icon" href="#"><img src="assets/image/search-icon.png" alt="search-icon" width="24" height="24"></a>
+                        <a class="global-button" href="#">Appointment</a>
+                        <a class="header__hamburger-icon" id="hamburger" href="#"><i class="fa-solid fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <nav class="mobile-menu__nav-link">
+                <ul class="mobile-menu__nav-link-list"> 
+                    <li><a class="mobile-menu__nav-link-list-item active" href="index.html">Home</a></li>
+                    <li><a class="mobile-menu__nav-link-list-item" href="about.html">About Us</a></li>
+                    <li><a class="mobile-menu__nav-link-list-item" href="#">Services</a></li>
+                    <li><a class="mobile-menu__nav-link-list-item" href="#">Doctors</a></li>
+                    <li><a class="mobile-menu__nav-link-list-item" href="#">News</a></li>
+                    <li><a class="mobile-menu__nav-link-list-item" href="#">Contact</a></li>
+                </ul>
+                <a class="global-button" href="#">Appointment</a>
+            </nav>
+        </div>
+    </header>
+    <!-- ########### Header Section End ###########-->
+
+
+    <!-- ########### Hero Section Start ###########-->
+    <section class="hero">
+        <div class="hero__image">
+            <img src="assets/image/hero-img3.png" alt="hero-image" width="100%" height="100%">
+
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content-div">
+            <div class="container">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <div>
+                            <p class="section-subtitle description-primary">Caring for Life</p>
+                            <h1 class="hero__title">Leading the Way in Medical Excellence</h1>
+                        </div>
+                        <a class="global-button" href="#">Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- ########### Hero Section End ###########-->
+
+
+    <!-- ########### Hero Box Section Start ###########-->
+    <section class="hero__box-section">
+        <div class="container">
+            <div class="hero__box-container">
+                <a class="hero__box hero__box--primary" href="#">
+                    <p class="hero__box-title description-secondary">Book an Appointment</p>
+                    <img src="assets/image/calendar.svg" alt="calendar-icon" width="50" height="50">
+                </a>
+                <a class="hero__box hero__box--secondary" href="#">
+                    <p class="hero__box-title description-secondary">Book an Appointment</p>
+                    <img src="assets/image/Team.svg" alt="Team-icon" width="50" height="50">
+                </a>
+                <a class="hero__box hero__box--third" href="#">
+                    <p class="hero__box-title description-secondary">Book an Appointment</p>
+                    <img src="assets/image/cash.svg" alt="cash-icon" width="50" height="50">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Hero Box Section End ###########-->
+
+
+    <!-- ########### Welcome Section Start ###########-->
+    <section class="welcome section-padding">
+        <div class="container">
+            <div class="welcome__inner">
+                <div class="welcome__content">
+                    <div>
+                        <p class="section-subtitle description-primary">Welcome to Meddical</p>
+                        <h2>A Great Place to Receive Care</h2>
+                    </div>
+                    <p class="welcome__description description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.</p>
+                    <a class="welcome__btn description-secondary" href="#">Learn More <span class="icon-right"></span></a>
+                </div>
+
+                <div class="welcome__image">
+                    <img src="assets/image/welcome-image.png" alt="welcome-image" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Welcome Section End ###########-->
+
+
+    <!-- ########### Services Section Start ###########-->
+    <section class="services section-padding section-pt-0">
+        <div class="container">
+            <div class="services__inner">
+                <div>
+                    <p class="section-subtitle description-primary">Care you can believe in</p>
+                    <h2>Our Services</h2>
+                </div>
+
+                <div class="services__content">
+                    <div class="services__tabs-container">
+                        <div class="services__tab" data-tab="tab1">
+                            <p class="icon-blendege services__tab-icon"></p>
+                            <p class="description-secondary">Free Checkup</p>
+                        </div>
+                        <div class="services__tab services__tab--active" data-tab="tab2">
+                            <p class="icon-heart services__tab-icon"></p>
+                            <p class="description-secondary">Cardiogram</p>
+                        </div>
+                        <div class="services__tab" data-tab="tab3">
+                            <p class="icon-medkit services__tab-icon"></p>
+                            <p class="description-secondary">Dna Testing</p>
+                        </div>
+                        <div class="services__tab" data-tab="tab4">
+                            <p class="icon-blood services__tab-icon"></p>
+                            <p class="description-secondary">Blood Bank</p>
+                        </div>
+                        <a class="services__view-btn" href="#">View All</a>
+                    </div>
+
+                    <div class="services__main-content">
+                        <div class="services__main-content-container services__main-content-container--active" id="tab2">
+                            <div class="services__tab-content">
+                                <h3>A passion for putting patients first.</h3>
+
+                                <div class="services__tab-features">
+                                    <ul>
+                                        <li class="description-primary">A Passion for Healing</li>
+                                        <li class="description-primary">All our best</li>
+                                        <li class="description-primary">A Legacy of Excellence</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="description-primary">5-Star Care</li>
+                                        <li class="description-primary">Believe in Us</li>
+                                        <li class="description-primary">Always Caring</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__tab-description">
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.</p>
+
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.</p>
+                                </div>
+                            </div>
+
+                            <div class="services__tab-image">
+                                <div>
+                                    <img src="assets/image/service1.png" alt="Service-image">
+                                </div>
+                                <div>
+                                    <img src="assets/image/service2.png" alt="Service-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services__main-content-container" id="tab1">
+                            <div class="services__tab-content">
+                                <h3>A passion for putting patients first.</h3>
+
+                                <div class="services__tab-features">
+                                    <ul>
+                                        <li class="description-primary">5-Star Care</li>
+                                        <li class="description-primary">Believe in Us</li>
+                                        <li class="description-primary">Always Caring</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="description-primary">A Passion for Healing</li>
+                                        <li class="description-primary">All our best</li>
+                                        <li class="description-primary">A Legacy of Excellence</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__tab-description">
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.</p>
+
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.</p>
+                                </div>
+                            </div>
+
+                            <div class="services__tab-image">
+                                <div>
+                                    <img src="assets/image/doctor2.png" alt="Service-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services__main-content-container" id="tab3">
+                            <div class="services__tab-content">
+                                <h3>A passion for putting patients first.</h3>
+
+                                <div class="services__tab-features">
+                                    <ul>
+                                        <li class="description-primary">A Passion for Healing</li>
+                                        <li class="description-primary">All our best</li>
+                                        <li class="description-primary">A Legacy of Excellence</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="description-primary">5-Star Care</li>
+                                        <li class="description-primary">Believe in Us</li>
+                                        <li class="description-primary">Always Caring</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__tab-description">
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.</p>
+
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.</p>
+                                </div>
+                            </div>
+
+                            <div class="services__tab-image">
+                                <div>
+                                    <img src="assets/image/doctor1.png" alt="Service-image">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="services__main-content-container" id="tab4">
+                            <div class="services__tab-content">
+                                <h3>A passion for putting patients first.</h3>
+
+                                <div class="services__tab-features">
+                                    <ul>
+                                        <li class="description-primary">A Passion for Healing</li>
+                                        <li class="description-primary">All our best</li>
+                                        <li class="description-primary">A Legacy of Excellence</li>
+                                    </ul>
+                                    <ul>
+                                        <li class="description-primary">5-Star Care</li>
+                                        <li class="description-primary">Believe in Us</li>
+                                        <li class="description-primary">Always Caring</li>
+                                    </ul>
+                                </div>
+
+                                <div class="services__tab-description">
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Quisque placerat scelerisque tortor ornare ornare Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.</p>
+
+                                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque. Convallis felis vitae tortor augue. Velit nascetur proin massa in.</p>
+                                </div>
+                            </div>
+
+                            <div class="services__tab-image">
+                                <div>
+                                    <img src="assets/image/doctor3.png" alt="Service-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Services Section End ###########-->
+
+
+    <!-- ########### Speciality Section Start ###########-->
+    <section class="speciality section-padding">
+        <div class="container">
+            <div class="speciality__inner">
+                <div class="speciality__content">
+                    <div>
+                        <p class="section-subtitle description-primary">Always Caring</p>
+                        <h2>Our Specialties</h2>
+                    </div>
+                </div>
+
+                <div class="speciality__box-container">
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                    <div class="speciality__box">
+                        <p class="icon-heartbeat speciality__box-icon"></p>
+                        <p class="description-secondary">Neurology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Speciality Section End ###########-->
+
+
+    <!-- ########### Appointment Section Start ###########-->
+    <section class="appointment section-padding" style="background-image: url('assets/image/appointment-bg.png'); background-repeat: no-repeat; background-size: cover;">
+        <div class="container">
+            <div class="appointment__inner">
+                <div class="appointment__content">
+                    <h2>Book an Appointment</h2>
+                    <p class="description-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat scelerisque tortor ornare ornare. Convallis felis vitae tortor augue. Velit nascetur proin massa in. Consequat faucibus porttitor enim et.</p>
+                </div>
+
+                <div class="appointment__form-container">
+                    <form action="#" method="post" class="appointment__form">
+                        <div class="appointment__form-input-div">
+                            <input type="text" name="name" id="name" placeholder="Name" class="appointment__form-input-div--radius-left">
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <div class="appointment__form-input-select appointment__form-input-div--radius-right">
+                                <select name="gender" id="gender">
+                                    <option value="male" selected>Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <input type="email" name="Email" id="Email" placeholder="Email">
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <input type="phone" name="Phone" id="Phone" placeholder="Phone">
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <div class="appointment__form-input-date">
+                                <input type="date" name="date" id="date">
+                            </div>
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <div class="appointment__form-input-select">
+                                <select name="time" id="time">
+                                    <option value="time" selected>Time</option>
+                                    <option value="10:00AM">10:00AM</option>
+                                    <option value="11:00AM">11:00AM</option>
+                                    <option value="12:00AM">12:00AM</option>
+                                    <option value="4:00PM">4:00PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <div class="appointment__form-input-select">
+                                <select name="doctor" id="doctor">
+                                    <option value="male" selected>Doctor</option>
+                                    <option value="Vishal">Vishal</option>
+                                    <option value="Nitin">Nitin</option>
+                                    <option value="Manan">Manan</option>
+                                    <option value="Kishan">Kishan</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="appointment__form-input-div">
+                            <div class="appointment__form-input-select">
+                                <select name="department" id="department">
+                                    <option value="department" selected>Department</option>
+                                    <option value="Designing">Designing</option>
+                                    <option value="Developing">Developing</option>
+                                    <option value="UI/UX">UI/UX</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="appointment__form-input-div appointment__form-input-div-100">
+                            <textarea name="message" id="message" rows="4">Message</textarea>
+                        </div>
+
+                        <input type="submit" value="Submit" class="appointment__form-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Appointment Section End ###########-->
+
+
+    <!-- ########### Doctors Section Start ###########-->
+    <section class="doctors section-padding">
+        <div class="container">
+            <div class="doctors__inner">
+                <div class="doctors__content">
+                    <div>
+                        <p class="section-subtitle description-primary">Trusted Care</p>
+                        <h2>Our Doctors</h2>
+                    </div>
+                </div>
+
+                <div class="doctors__box-container">
+                    <div class="swiper doctors__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="doctors__box">
+                                    <img src="assets/image/doctor1.png" alt="doctor-image" width="100%" height="100%">
+                                    <div class="doctors__box-content">
+                                        <a href="#"><p class="doctors__box-name description-primary">Doctor’s Name</p></a>
+                                        <p class="doctors__box-role description-primary">Neurology</p>
+                                        <div class="doctors__box-social">
+                                            <a href="#" target="_blank"><p class="icon-linkedin-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-facebook-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-instagram-circle"></p></a>
+                                        </div>
+                                    </div>
+                                    <a class="doctors__box-btn description-secondary" href="#">View Profile</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctors__box">
+                                    <img src="assets/image/doctor2.png" alt="doctor-image" width="100%" height="100%">
+                                    <div class="doctors__box-content">
+                                        <a href="#"><p class="doctors__box-name description-primary">Doctor’s Name</p></a>
+                                        <p class="doctors__box-role description-primary">Neurology</p>
+                                        <div class="doctors__box-social">
+                                            <a href="#" target="_blank"><p class="icon-linkedin-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-facebook-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-instagram-circle"></p></a>
+                                        </div>
+                                    </div>
+                                    <a class="doctors__box-btn description-secondary" href="#">View Profile</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctors__box">
+                                    <img src="assets/image/doctor3.png" alt="doctor-image" width="100%" height="100%">
+                                    <div class="doctors__box-content">
+                                        <a href="#"><p class="doctors__box-name description-primary">Doctor’s Name</p></a>
+                                        <p class="doctors__box-role description-primary">Neurology</p>
+                                        <div class="doctors__box-social">
+                                            <a href="#" target="_blank"><p class="icon-linkedin-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-facebook-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-instagram-circle"></p></a>
+                                        </div>
+                                    </div>
+                                    <a class="doctors__box-btn description-secondary" href="#">View Profile</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctors__box">
+                                    <img src="assets/image/doctor1.png" alt="doctor-image" width="100%" height="100%">
+                                    <div class="doctors__box-content">
+                                        <a href="#"><p class="doctors__box-name description-primary">Doctor’s Name</p></a>
+                                        <p class="doctors__box-role description-primary">Neurology</p>
+                                        <div class="doctors__box-social">
+                                            <a href="#" target="_blank"><p class="icon-linkedin-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-facebook-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-instagram-circle"></p></a>
+                                        </div>
+                                    </div>
+                                    <a class="doctors__box-btn description-secondary" href="#">View Profile</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="doctors__box">
+                                    <img src="assets/image/doctor2.png" alt="doctor-image" width="100%" height="100%">
+                                    <div class="doctors__box-content">
+                                        <a href="#"><p class="doctors__box-name description-primary">Doctor’s Name</p></a>
+                                        <p class="doctors__box-role description-primary">Neurology</p>
+                                        <div class="doctors__box-social">
+                                            <a href="#" target="_blank"><p class="icon-linkedin-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-facebook-circle"></p></a>
+                                            <a href="#" target="_blank"><p class="icon-instagram-circle"></p></a>
+                                        </div>
+                                    </div>
+                                    <a class="doctors__box-btn description-secondary" href="#">View Profile</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Doctors Section End ###########-->
+
+
+    <!-- ########### News Section Start ###########-->
+    <section class="news section-padding">
+        <div class="container">
+            <div class="news__inner">
+                <div class="news__content">
+                    <div>
+                        <p class="section-subtitle description-primary">Better information, Better health</p>
+                        <h2>News</h2>
+                    </div>
+                </div>
+
+                <div class="news__box-container">
+                    <div class="swiper news__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news__boxes-slide">
+                                    <div class="news__box">
+                                        <img src="assets/image/news.png" alt="doctor-image" width="160" height="100%">
+                                        <div class="news__box-content">
+                                            <p class="news__box-date">Monday 05, September 2021 | By Author</p>
+                                            <a href="#"><h3 class="news__box-title">Breaking News Headline Goes Here, Just Enough Words</h3></a>
+                                            <div class="news__box-icon">
+                                                <a href="#"><p class="icon-eye-1 news__box-icon-view"><span>98</span></p></a>
+                                                <a href="#"><p class="icon-heart-1 news__box-icon-like"><span>86</span></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news__box">
+                                        <img src="assets/image/news.png" alt="doctor-image" width="160" height="100%">
+                                        <div class="news__box-content">
+                                            <p class="news__box-date">Monday 05, September 2021 | By Author</p>
+                                            <a href="#"><h3 class="news__box-title">This is a Sample Title for Your News Article Here</h3></a>
+                                            <div class="news__box-icon">
+                                                <a href="#"><p class="icon-eye-1 news__box-icon-view"><span>98</span></p></a>
+                                                <a href="#"><p class="icon-heart-1 news__box-icon-like"><span>86</span></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="news__boxes-slide">
+                                    <div class="news__box">
+                                        <img src="assets/image/service1.png" alt="doctor-image" width="160" height="100%">
+                                        <div class="news__box-content">
+                                            <p class="news__box-date">Monday 05, September 2021 | By Author</p>
+                                            <a href="#"><h3 class="news__box-title">This Article’s Title goes Here, but not too long.</h3></a>
+                                            <div class="news__box-icon">
+                                                <a href="#"><p class="icon-eye-1 news__box-icon-view"><span>98</span></p></a>
+                                                <a href="#"><p class="icon-heart-1 news__box-icon-like"><span>86</span></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news__box">
+                                        <img src="assets/image/service2.png" alt="doctor-image" width="160" height="100%">
+                                        <div class="news__box-content">
+                                            <p class="news__box-date">Monday 05, September 2021 | By Author</p>
+                                            <a href="#"><h3 class="news__box-title">This Article’s Title goes Here, but not too long.</h3></a>
+                                            <div class="news__box-icon">
+                                                <a href="#"><p class="icon-eye-1 news__box-icon-view"><span>98</span></p></a>
+                                                <a href="#"><p class="icon-heart-1 news__box-icon-like"><span>86</span></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="news__boxes-slide">
+                                    <div class="news__box">
+                                        <img src="assets/image/news.png" alt="doctor-image" width="160" height="100%">
+                                        <div class="news__box-content">
+                                            <p class="news__box-date">Monday 05, September 2021 | By Author</p>
+                                            <a href="#"><h3 class="news__box-title">This Article’s Title goes Here, but not too long.</h3></a>
+                                            <div class="news__box-icon">
+                                                <a href="#"><p class="icon-eye-1 news__box-icon-view"><span>98</span></p></a>
+                                                <a href="#"><p class="icon-heart-1 news__box-icon-like"><span>86</span></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news__box">
+                                        <img src="assets/image/news.png" alt="doctor-image" width="160" height="100%">
+                                        <div class="news__box-content">
+                                            <p class="news__box-date">Monday 05, September 2021 | By Author</p>
+                                            <a href="#"><h3 class="news__box-title">This Article’s Title goes Here, but not too long.</h3></a>
+                                            <div class="news__box-icon">
+                                                <a href="#"><p class="icon-eye-1 news__box-icon-view"><span>98</span></p></a>
+                                                <a href="#"><p class="icon-heart-1 news__box-icon-like"><span>86</span></p></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination-news"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### News Section End ###########-->
+
+
+    <!-- ########### Contact Section Start ###########-->
+    <section class="contact section-padding">
+        <div class="container">
+            <div class="contact__inner">
+                <div class="contact__content">
+                    <div>
+                        <p class="section-subtitle description-primary">Get in touch</p>
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+
+                <div class="contact__box-container">
+                    <div class="contact__box">
+                        <p class="contact__box-icon icon-call"></p>
+                        <div class="contact__box-content">
+                            <p class="contact__box-title description-primary">Emergency</p>
+                            <a class="contact__box-link description-secondary" href="#">(237) 666-331-894</a>
+                            <a class="contact__box-link description-secondary" href="#">(237) 681-812-255</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__box">
+                        <p class="contact__box-icon icon-location-outline"></p>
+                        <div class="contact__box-content">
+                            <p class="contact__box-title description-primary">Location</p>
+                            <a class="contact__box-link description-secondary" href="#">0123 Some place <br> 9876 Some country</a>
+                            <!-- <a class="contact__box-link description-secondary" href="#">(237) 681-812-255</a> -->
+                        </div>
+                    </div>
+
+                    <div class="contact__box">
+                        <p class="contact__box-icon icon-mail"></p>
+                        <div class="contact__box-content">
+                            <p class="contact__box-title description-primary">Email</p>
+                            <a class="contact__box-link description-secondary" href="mailto:fildineeesoe@gmil.com">fildineeesoe@gmil.com</a>
+                            <a class="contact__box-link description-secondary" href="mailto:myebstudios@gmail.com">myebstudios@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__box">
+                        <p class="contact__box-icon icon-clock"></p>
+                        <div class="contact__box-content">
+                            <p class="contact__box-title description-primary">Working Hours</p>
+                            <a class="contact__box-link description-secondary" href="#">Mon-Sat 09:00-20:00</a>
+                            <a class="contact__box-link description-secondary" href="#">Sunday Emergency only</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ########### Contact Section End ###########-->
+
+
+    <!-- ########### Footer Section Start ###########-->
+    <footer class="footer section-padding">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__main-container">
+                    <div class="footer__column">
+                        <a href="index.html"><img src="assets/image/footer-logo.svg" alt="footer-logo" width="193" height="42"></a>
+                        <div class="footer__content">
+                            <p class="description-primary">Leading the Way in Medical Execellence, Trusted Care.</p>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__column-heading description-primary">Important Links</p>
+                        <div class="footer__links">
+                            <ul>
+                                <li><a class="description-secondary" href="#">Appointment</a></li>
+                                <li><a class="description-secondary" href="#">Doctors</a></li>
+                                <li><a class="description-secondary" href="#">Services</a></li>
+                                <li><a class="description-secondary" href="about.html">About Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__column-heading description-primary">Contact Us</p>
+                        <div class="footer__links">
+                            <ul>
+                                <li><a class="description-secondary" href="tel:237681812255">Call: (237) 681-812-255</a></li>
+                                <li><a class="description-secondary" href="mailto:fildineesoe@gmail.com">Email: fildineesoe@gmail.com</a></li>
+                                <li><a class="description-secondary" href="#">Address: 0123 Some place</a></li>
+                                <li><a class="description-secondary" href="#">Some country</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer__column">
+                        <p class="footer__column-heading description-primary">Newsletter</p>
+                        <div class="footer__newsletter">
+                            <div class="footer__newsletter-input">
+                                <input type="email" name="newsletter" id="newsletter" placeholder="Enter your email">
+                                <a href="#"><p class="icon-direction footer__newsletter-input-icon"></p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__divider">
+                    <hr />
+                </div>
+
+                <div class="footer__copyright">
+                    <div class="footer__copyright-content">
+                        <p class="description-secondary">© 2025 Hospital’s name All Rights Reserved by PNTEC-LTD</p>
+                    </div>
+
+                    <div class="footer__social">
+                        <a class="footer__social-icon" href="#" target="_blank"><p class="icon-linkedin-circle"></p></a>
+                        <a class="footer__social-icon" href="#" target="_blank"><p class="icon-facebook-circle"></p></a>
+                        <a class="footer__social-icon" href="#" target="_blank"><p class="icon-instagram-circle"></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ########### Footer Section End ###########-->
+
+
+    <!-- ########### Script File ###########-->
+    <script src="assets/js/swiper/swiper-bundle.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+// Header CSS Start
+.header {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        @include max-425 {
+            padding: 14px 0;
+        }
+    }
+
+    &__logo {
+        width: 20%;
+
+        @include max-991 {
+            display: none;
+        }
+    }
+
+    &__info {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @include min-1400 {
+            gap: 30px;
+        }
+
+        @include max-991 {
+            width: 100%;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        @include max-425 {
+            gap: 0px;
+            row-gap: 16px;
+        }
+
+        .order-1 {
+            @include max-575 {
+                order: 1;
+            }
+        }
+
+        .order-2 {
+            @include max-575 {
+                order: 2;
+            }
+        }
+
+        .order-3 {
+            @include max-575 {
+                order: 3;
+                width: fit-content;
+            }
+        }
+
+        &-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+
+            @include max-425 {
+                width: 48%;
+                gap: 2px;
+            }
+
+            &-icon {
+                font-size: 36px;
+                color: $primary-color;
+
+                @include max-575 {
+                    font-size: 28px;
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-link {
+                font-weight: 500;
+                color: $secondary-color;
+                transition: all 0.3s ease;
+
+                &:hover {
+                    color: #212124;
+                }
+            }
+
+            &-title {
+                font-weight: 500;
+                line-height: 22px;
+                text-transform: uppercase;
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__bottom-bar {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: $primary-color;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 17px 0;
+
+        .header__logo {
+            display: none;
+
+            @include max-991 {
+                display: block;
+                width: 40%;
+            }
+        }
+    }
+
+    &__nav-link {
+        width: 65%;
+
+        @include max-991 {
+            display: none;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-start;
+
+            &-item {
+                color: #FCFEFE;
+            }
+
+            .active {
+                color: $accent-color;
+            }
+        }
+    }
+
+    &__btn-container {
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+
+        @include max-991 {
+            width: 60%;
+            gap: 30px;
+
+             .global-button {
+                display: none;
+            }
+        }
+    }
+
+    &__hamburger-icon {
+        display: none;
+        font-size: 24px;
+        color: #FCFEFE;
+
+        @include max-991 {
+            display: block;
+        }
+    }
+}
+
+.mobile-menu {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    background-color: $accent-color;
+    transition: all 0.5s ease;
+
+    &__nav-link {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 48px 134px;
+
+        @include max-425 {
+            padding: 35px 50px;
+        }
+
+        .global-button {
+            width: 100%;
+            text-align: center;
+            background-color: $primary-color;
+            color: #fff;
+
+            &:hover {
+                background-color: $color-white;
+                color: $primary-color;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            &-item {
+                font-family: $primary-family;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32px;
+                color: $primary-color;
+            }
+
+            .active {
+                font-weight: 600;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.mobile-menu.open {
+    max-height: 465px;
+    visibility: visible;    
+    opacity: 1;
+}
+
+.header__bottom-bar.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Hidden state when scrolling down */
+.header__bottom-bar.hide {
+  transform: translateY(-100%);
+}

@@ -1,0 +1,215 @@
+.appointment {
+    position: relative;
+
+    &::before {
+        background:  rgba(252, 254, 254, 0.8);
+        content:  "";
+        height:  100%;
+        left:  0;
+        position:  absolute;
+        top:  0;
+        width:  100%;
+        z-index:  0;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        @include max-991 {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &__content {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+
+        @include max-991 {
+            width: 100%;
+        }
+
+        h2 {
+            color: $secondary-color;
+        }
+
+        .description-secondary {
+            color: #212124;
+        }
+    }
+
+    &__form-container {
+        width: 50%;
+
+        @include min-1400 {
+            width: 40%;
+        }
+
+        @include max-991{
+            width: 100%;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        &-input-div {
+            width: 50%;
+            border: 1px solid $color-white;
+
+            @include max-575 {
+                width: 100%;
+            }
+
+            
+            &--radius-left {
+                border-top-left-radius: 5px;
+
+                @include max-575 {
+                    border-top-right-radius: 5px;
+                }
+            }
+
+            &--radius-right {
+                border-top-right-radius: 5px;
+
+                @include max-575 {
+                    border-top-right-radius: 0px;
+                }
+            }
+
+            input, 
+            textarea {
+                width: 100%;
+                font-family: $primary-family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding: 16px 22px;
+                background-color: $primary-color;
+                color: #FCFEFE;
+                border: none;
+
+                &::placeholder {
+                    color: #FCFEFE;
+                    opacity: 1; /* Firefox */
+                }
+
+                &::-ms-input-placeholder { /* Edge 12 -18 */
+                    color: #FCFEFE;
+                }
+            }
+
+            &-100 {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &-input-select {
+            position: relative;
+            padding: 16px 22px;
+            background-color: $primary-color;
+            height: 100%;
+
+            select {
+                display: block;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                background-color: transparent;
+                color: #FCFEFE;
+                border: none;
+                appearance: none; /* remove native arrow */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
+            option {
+                font-family: $primary-family;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                padding: 16px 22px;
+                background-color: $color-white;
+                color: $primary-color;
+            }
+
+            &::after {
+                content: "\f078";
+                font-family: "fontawesome";
+                font-size: 20px;
+                line-height: 16px;
+                color: $accent-color;
+                position: absolute;
+                right: 22px;
+                top: 38%;
+            }
+        }
+
+        &-input-date {
+            position: relative;
+            padding: 16px 22px;
+            background-color: $primary-color;
+
+            input {
+                padding: 0;
+                background-color: transparent;
+                color: #FCFEFE;
+                appearance: none; /* remove native arrow */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
+            &::after {
+                content: "\e829";
+                font-family: "fontello";
+                font-size: 20px;
+                line-height: 16px;
+                color: $accent-color;
+                position: absolute;
+                right: 22px;
+                top: 38%;
+            }
+        }
+
+        &-btn {
+            width: 100%;
+            border: none;
+            outline: none;
+            font-family: $primary-family;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            padding: 15px 0;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: $accent-color;
+            color: $primary-color;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+
+            &:hover {
+                background-color: 	#8CAAEF;
+                color: #212124;
+            }
+        }
+    }
+}

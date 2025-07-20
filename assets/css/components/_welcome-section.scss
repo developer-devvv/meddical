@@ -1,0 +1,74 @@
+.welcome {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        @include max-767 {
+            gap: 55px;
+        }
+
+        @include max-575 {
+            gap: 48px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+
+        @include max-767 {
+            gap: 12px;
+        }
+
+        @include max-575 {
+            gap: 8px;
+        }
+    }
+
+    &__description {
+        width: 60%;
+        color: #212124;
+
+        @include min-1400 {
+            width: 55%;
+        }
+
+        @include max-1199 {
+            width: 65%;
+        }
+
+        @include max-991 {
+            width: 100%;
+        }
+    }
+
+    &__btn {
+        margin-top: 18px;
+        color: $secondary-color;
+
+        @include max-767 {
+            margin-top: 14px;
+        }
+
+        @include max-575 {
+            margin-top: 8px;
+        }
+
+        span {
+            margin-left: 6px;
+            color: $primary-color;
+            transition: all 0.3s ease;
+        }
+
+        &:hover span {
+            font-size: 20px;
+            margin-left: 18px;
+        }
+    }
+}

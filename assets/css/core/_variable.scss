@@ -1,0 +1,107 @@
+// colors
+$color-black: #000000;
+$color-white: #ffffff;
+$primary-color: #1F2B6C;
+$secondary-color: #159EEC;
+$accent-color: #BFD2F8;
+
+// font family
+$primary-family: "Work Sans", sans-serif;
+$secondary-family: "Yeseva One", sans-serif;
+
+
+@font-face {
+	font-family: "Work Sans";
+	src: url('../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+	font-family: "Yeseva One";
+	src: url('../fonts/Yeseva_One/YesevaOne-Regular.ttf');
+}
+
+
+// Responsive Mixin
+@mixin min-1920 {
+	@media screen and (min-width: 1920px) {
+		@content;
+	}
+}
+
+@mixin min-1440 {
+	@media screen and (min-width: 1440px) {
+		@content;
+	}
+}
+
+@mixin min-1400 {
+	@media screen and (min-width: 1400px) {
+		@content;
+	}
+}
+
+@mixin max-1199 {
+	@media screen and (max-width: 1199px) {
+		@content;
+	}
+}
+
+@mixin max-1024 {
+	@media screen and (max-width: 1024px) {
+		@content;
+	}
+}
+
+@mixin max-991 {
+	@media screen and (max-width: 991px) {
+		@content;
+	}
+}
+
+@mixin max-767 {
+	@media screen and (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin max-575 {
+	@media screen and (max-width: 575px) {
+		@content;
+	}
+}
+
+@mixin max-425 {
+	@media screen and (max-width: 425px) {
+		@content;
+	}
+}
+
+@mixin max-360 {
+	@media screen and (max-width: 360px) {
+		@content;
+	}
+}
+
+@mixin min-576 {
+	@media screen and (min-width: 576px) {
+		@content;
+	}
+}
+
+@mixin min-768 {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin min-992 {
+	@media screen and (min-width: 992px) {
+		@content;
+	}
+}
+
+@mixin min-1200 {
+	@media screen and (min-width: 1200px) {
+		@content;
+	}
+}

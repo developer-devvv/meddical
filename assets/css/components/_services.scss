@@ -1,0 +1,264 @@
+.services {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        @include max-991 {
+            gap: 50px;
+        }
+
+        @include max-767 {
+            gap: 40px;
+        }
+
+        @include max-575 {
+            gap: 30px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        @include max-1199 {
+            align-items: flex-start;
+        }
+
+        @include max-991 {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    &__tabs-container {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        border: 1px solid #00000030;
+        border-radius: 5px;
+
+        @include max-991 {
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__tab {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 25px;
+        cursor: pointer;
+
+        @include max-1199 {
+            padding: 16px;
+        }
+
+        @include max-991 {
+            width: 25%;
+        }
+
+        @include max-767 {
+            width: 50%;
+        }
+
+        &-icon {
+            font-size: 26px;
+            color: $secondary-color;
+
+            @include min-1400 {
+                font-size: 35px;
+            }
+        }
+ 
+        .description-secondary {
+            color: #212124;
+        }
+
+        &--active {
+            background-color: $primary-color;
+
+            .services__tab-icon {
+                color: $accent-color;
+            }
+
+            .description-secondary {
+                color: $accent-color;
+            }
+        }
+    }
+
+    &__view-btn {
+        width: 100%;
+        font-family: $primary-family;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        padding: 12px;
+        color: $accent-color;
+        background-color: $primary-color;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $accent-color;
+            color: $primary-color;
+        }
+
+        @include max-991 {
+            margin-top: 12px;
+        }
+    }
+
+    &__main-content {
+        width: 85%;
+
+        @include max-991 {
+            width: 100%;
+        }
+        
+        &-container {
+            height: 100%;
+            display: none;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            @include max-1199 {
+                align-items: flex-start;
+            }
+
+            @include max-767 {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            &--active {
+                display: flex;
+            }
+        }
+    }
+
+    &__tab-content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 30px;
+
+        @include min-1400 {
+            gap: 26px;
+        }
+
+        @include max-991 {
+            padding: 0;
+            padding-right: 17px;
+        }
+
+        h3 {
+            font-family: $primary-family;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 34px;
+            color: $color-black;
+
+            @include max-767 {
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &__tab-features {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+
+        @include max-1199 {
+            gap: 30px;
+        }
+
+        @include max-991 {
+            gap: 20px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            li {
+                position: relative;
+                padding-left: 30px;
+                color: #000000;
+
+                @include max-575 {
+                    padding-left: 24px;
+                }
+            }
+
+            li::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 4px;
+                width: 20px;
+                height: 20px;
+                background-color: $secondary-color;
+                border-radius: 50%;
+
+                @include max-575 {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+
+    &__tab-description {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 12px;
+
+        @include min-1400 {
+            margin-top: 14px;
+        }
+
+        .description-secondary {
+            color: #212124;
+        }
+    }
+
+    &__tab-image {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        @include max-767 {
+            flex-direction: row;
+            gap: 12px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
